@@ -17,8 +17,6 @@ export const CreateProduct = () => {
         navigate('/')
     }
 
-
-
   return (
     <div>
         <h3>Create product</h3>
