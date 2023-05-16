@@ -25,6 +25,8 @@ export const EditProduct = () => {
             setStock(response.data.stock)
         }
         getProductById()
+        // Para que no tire error en consola sobre useEffect()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
 
   return (

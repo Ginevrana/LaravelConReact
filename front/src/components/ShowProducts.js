@@ -25,7 +25,7 @@ const ShowProducts = () => {
 
     const deleteProduct = async (id) => {
         // Para borrar id seleccionado 
-        await axios.delete(`${endpoint}/products/${id}`)
+        await axios.delete(`${endpoint}/product/${id}`)
         // Para actualizar la tabla posteriormente a eliminar
         getAllProducts()
     }
@@ -53,7 +53,7 @@ const ShowProducts = () => {
                         <td>{product.stock}</td>
                         <td>
                             <Link to={`/edit/${product.id}`} className='btn btn-warning'>Edit</Link>
-                            <button onClick={()=>deleteProduct(product.id)} className='btn btn-danger'>Delete</button>
+                            <button onClick={ ()=>deleteProduct(product.id) } className='btn btn-danger'>Delete</button>
                         </td>
                     </tr>
                 ))}
