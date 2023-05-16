@@ -20,7 +20,7 @@ const ShowProducts = () => {
         const response = await axios.get(`${endpoint}/products`)
         // Para actualizar estado actual
         setProducts(response.data)
-        console.log(response.data);
+        // console.log(response.data);
     }
 
     const deleteProduct = async (id) => {
@@ -33,7 +33,7 @@ const ShowProducts = () => {
   return (
     <div>
         <div className='d-grid gap-2'>
-            <link to="/create" className='btn btn-success btn-lg mt-2 mb-2 text-white'>Create</link>
+            <Link to="/create" className='btn btn-success btn-lg mt-2 mb-2 text-white'>Create</Link>
         </div>
 
         <table className='table table-striped'>
